@@ -1,4 +1,4 @@
-package org.example;
+package com.itmo.javaadvanced;
 
 import info.kgeorgiy.java.advanced.crawler.*;
 
