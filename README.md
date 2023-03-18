@@ -1,5 +1,5 @@
 # web-crawler
-A web crawler uses parallel BFS to visit urls and downloads them using java-multithreading.
+The web crawler uses parallel BFS to visit urls and downloads them using java-multithreading.
 
 Technologies that were used: __ExecutorService__, __Phaser__ and other classes from __java.util.concurrent__
 
@@ -24,7 +24,7 @@ public interface Crawler extends AutoCloseable {
 ```
    + The `download` method should visit pages in BFS order starting from a specified URL to a specified depth and return a list of downloaded pages and
    files. For example, if the depth is 1, only the specified page should be downloaded. If the depth is 2, then the specified page and those pages and
-   files to which ist has a link, and so on. This method can be called parallel in several threads
+   files to which it has a link, and so on. This method can be called parallel in several threads
    + Downloading and processing pages (extracting links) should be as parallel as possible, taking into account the limitations on the number of
    simultaneously loaded pages (including from a single host) and pages from which links are loaded
    + For multithreading, it is allowed to create up to `downloaders + extractors` threads
